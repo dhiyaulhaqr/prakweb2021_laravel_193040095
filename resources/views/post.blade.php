@@ -5,11 +5,11 @@
     <h1 class="mb-5">{{ $post->title }}</h1>
     
 
-    <p>by. dhiya ulhaqr in <a href="/categories/{{ $post->category->slug}}">{{$post->category->name}} </p></a>
+    <p>by. <a href="#" class="text-decoration-none">{{ $post->user->name }}</a> in <a href="/categories/{{ $post->category->slug}}" class="text-decoration-none">{{$post->category->name}} </p></a>
     {!! $post->body !!}
 </article>
 
-<a href="/blog">Back to Posts</a>
+<a href="/blog" class="d-block mt-3">Back to Posts</a>
 
 
 
