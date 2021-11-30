@@ -98,7 +98,7 @@
             oFReader.readAsDataURL(image.files[0]);
 
             oFReader.onload = function(oFREvent) {
-              imgPreview.src = OFREvent.target.result;
+              imgPreview.src = oFREvent.target.result;
             }
           }
 
